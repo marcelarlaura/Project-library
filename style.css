@@ -16,9 +16,10 @@
 
 .form{
     flex-grow: 1;
+    visibility:hidden;
 }
 
-.new-book{
+.new-book, .add{
     width: 150px;
     height: 50px;
     border-radius: 15px;
@@ -34,6 +35,7 @@ form{
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 25%;
+    
 }
 
 input, select{
@@ -43,4 +45,8 @@ input, select{
 
 h3{
     text-align: center;
+}
+
+.add{
+    background-color: crimson;
 }
