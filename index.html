@@ -9,14 +9,14 @@
 <body>
     
     <div>
-        <button type="button" class="new-book">Add New Book</button>
+        <button type="button" class="new-book">New Book</button>
     </div>
     <div class="main-content">
         <div class="book-holder">
         </div>
         <div class="form">
             <h3>Fill This Out! (New Book Info)</h3>
-            <form action="javascript.js" method="get">
+            <form action="" method="get">
                 <label for="title">Title of the Book: <input id='title' name= 'title' type="text"></label>
                 <label for="author">Name of its Author: <input id="author" name="author" type="text"></label>
                 <label for="pages">Number of Pages: <input id="pages" name="pages" type="number" min="1"></label>
@@ -30,10 +30,10 @@
                 </label>
                 <label for="release">Year of Release: <input id="release" name="release" type="number"></label>
                 <label for="publisher">Publisher's Name: <input id='publisher' name='publisher' type="text"></label>
-
+                <button type="submit" class="add">Add New Book</button>
             </form>
         </div>
     </div>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </body>
 </html>
