@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <button type="button" class="new-book">Add New Book</button>
+    </div>
+    <div class="main-content">
+        <div class="book-holder">
+        </div>
+        <div class="form">
+            <h3>Fill This Out! (New Book Info)</h3>
+            <form action="javascript.js" method="get">
+                <label for="title">Title of the Book: <input id='title' name= 'title' type="text"></label>
+                <label for="author">Name of its Author: <input id="author" name="author" type="text"></label>
+                <label for="pages">Number of Pages: <input id="pages" name="pages" type="number" min="1"></label>
+                <label for="genre">Genre of the Book: 
+                    <select id = 'genre' name="genre">
+                        <option value="fiction">Fiction </option>
+                        <option value="nonfiction">NonFiction </option>
+                        <option value="poetry">Poetry </option>
+                        <option value="drama">Drama </option>
+                    </select>
+                </label>
+                <label for="release">Year of Release: <input id="release" name="release" type="number"></label>
+                <label for="publisher">Publisher's Name: <input id='publisher' name='publisher' type="text"></label>
+
+            </form>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
