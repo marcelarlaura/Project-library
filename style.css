@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.main-content{
+    display:flex;
+    height: 90vh;
+}
+
+.book-holder{
+    flex-grow: 2;
+    background: linear-gradient(rgba(114, 54, 54, 0.219),rgb(175, 126, 70));
+}
+
+.form{
+    flex-grow: 1;
+}
+
+.new-book{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color:darkgoldenrod;
+    color:white;
+    font-weight: bold;
+    box-shadow: 0px 0px 12px 0px gray;
+}
+
+form{
+    display:flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 25%;
+}
+
+input, select{
+    width: 200px;
+    height: 30px;
+}
+
+h3{
+    text-align: center;
+}
