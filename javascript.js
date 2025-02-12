@@ -30,9 +30,36 @@ function addBookToLibrary(arg){
     
 }
 
+function displayBooks(arg){
+    let lastBookIndex = arg.length - 1;
+    let lastBookTitle = arg[lastBookIndex].title;
+    let lastBookAuthor = arg[lastBookIndex].author;
+    let div = document.createElement('div');
+    div.textContent = `${lastBookTitle} ${lastBookAuthor}`;
+    bookHolder.append(div);
+}
+
 newForm.addEventListener('click', () =>{
    form.style.visibility = 'visible';
 })
+
+createBook.addEventListener('click', (event)=>{
+    event.preventDefault();
+    let bookSample = new Book(title.value,author.value,pages.value,genre.value,release.value,publisher.value);
+    console.log(bookSample);
+    myLibrary.push(bookSample);
+    displayBooks(myLibrary);
+})
+
+
+
+
+
+    
+
+
+    
+
 
 
 
