@@ -78,3 +78,14 @@ h3{
     background-color: crimson;
     margin-left: 25%;
 }
+
+.read-status{
+    width: 10px;
+    height: 10px;
+}
+
+.delete-book{
+    font-size: 8px;
+    background-color: crimson;
+    color: white;
+}
