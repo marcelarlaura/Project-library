@@ -12,7 +12,8 @@ const myLibrary = [];
 let idvariable = 0;
 
 
-function Book(arg1, arg2,arg3, arg4, arg5, arg6){
+class Book {
+    constructor (arg1, arg2,arg3, arg4, arg5, arg6){
     this.title = arg1;
     this.author = arg2;
     this.pages = arg3;
@@ -20,17 +21,7 @@ function Book(arg1, arg2,arg3, arg4, arg5, arg6){
     this.year = arg5;
     this.publisher = arg6;
     this.id = '0' + idvariable;
-}
-
-function addBookToLibrary(arg){
-    let bookArray = [];
-    let value;
-    for (let key in arg){
-        value = arg[key];
-        bookArray.push(value);
     }
-    return bookArray;
-    
 }
 
 function displayBooks(arg){
@@ -79,6 +70,7 @@ createBook.addEventListener('click', (event)=>{
     release.value = '';
     publisher.value = '';
 })
+
 
 
 
