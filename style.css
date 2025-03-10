@@ -89,3 +89,7 @@ h3{
     background-color: crimson;
     color: white;
 }
+
+input:required::after{
+    content: 'do not leave this blank';
+}

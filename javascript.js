@@ -1,5 +1,6 @@
 const newForm = document.querySelector('.new-book');
 const form = document.querySelector('.form');
+const inputs = document.querySelector('.inputs');
 const createBook = document.querySelector('.add');
 const bookHolder = document.querySelector('.book-holder');
 const title = document.querySelector('#title');
@@ -56,20 +57,34 @@ function displayBooks(arg){
 
 newForm.addEventListener('click', () =>{
    form.style.visibility = 'visible';
+
+
 })
+
 
 createBook.addEventListener('click', (event)=>{
     event.preventDefault();
-    let bookSample = new Book(title.value,author.value,pages.value,genre.value,release.value,publisher.value);
-    myLibrary.push(bookSample);
-    idvariable++;
-    displayBooks(myLibrary);
-    title.value = '';
-    author.value = '';
-    pages.value = '';
-    release.value = '';
-    publisher.value = '';
+    if (title.value.length >= 1 && author.value.length >=1){
+        let bookSample = new Book(title.value,author.value,pages.value,genre.value,release.value,publisher.value);
+        myLibrary.push(bookSample);
+        idvariable++;
+        displayBooks(myLibrary);
+        title.value = '';
+        author.value = '';
+        pages.value = '';
+        release.value = '';
+        publisher.value = '';
+    } else if (title.value.length <=0 && author.value.length <=0){
+        alert("Provide a title for the book, and give its author a name too");
+    } else if (author.value.length <=0){
+        alert("Provide an author's name for the book");
+    } else {
+        alert("Provide a name for your book");
+    }
+
 })
+
+
 
 
 
